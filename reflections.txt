@@ -11,3 +11,8 @@ The command git config --global color.ui auto is used to ensure the coloring of 
 To make a folder a repository we use navigate to the folder and run the command git init
 To view the status of the folder and whether there is something left to commit, we use the command git status. This will show the lift of changes and whether we have committed them or not.
 The files are added to the staging area before being committed. This is done using the git add filename command.  
+We can makes changes to the files of the working directory and then save them. One point to noe is that the changes will not be made to the staging area unless we explicitly add the files. This is an advantage becuase we can use this distinction between the staging area and the working directory to comapre the files present in the staging area and the working directory. This is done to realise the list of changes we have made in our working directory. This comparision is done using the command git diff. This command takes no arguments.
+In the same way as above, if we want to compare the files present in the staging area with the files in the commited area to double check things, we do them by using the command git diff --staged
+In case after performing many changes, we want to reset our files to earlier states without any edits, we can do that using the command 
+git reset --hard. One point to note is that this command will restore the staging area and the working area to its initial states and this is not undoable. 
+I made this edit to check out different versions of git diff. 
