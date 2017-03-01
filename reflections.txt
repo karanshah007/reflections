@@ -1,0 +1,13 @@
+In the fisrt excercise I learnt how to use the diff command first to compare two files. The synatx is:
+diff -u first_file second_file
+
+Now I created a version-control folder on the desktop and I used basic linux commands to create this reflextions.txt file and I am now blabbering!
+
+The command git log will tell about the history of commits and the message and also the author with the timing of change!
+The command git diff commitID1 commitID2 will tell us the difference between the two commits and the changes. Its output is similar to that of diff command in case of unix files. One point to note is the order of the arguments: commitID1 is for the old file and commitID2 is for the new file. 
+The command git log --stat is used to understand the statistics related to the changes in the multiple files (Repository). 
+The command git clone url is used to clone the repository of the url and save it on the local computer.
+The command git config --global color.ui auto is used to ensure the coloring of the output when we try to determine the difference between git commits.
+To make a folder a repository we use navigate to the folder and run the command git init
+To view the status of the folder and whether there is something left to commit, we use the command git status. This will show the lift of changes and whether we have committed them or not.
+The files are added to the staging area before being committed. This is done using the git add filename command.  
