@@ -15,4 +15,9 @@ We can makes changes to the files of the working directory and then save them. O
 In the same way as above, if we want to compare the files present in the staging area with the files in the commited area to double check things, we do them by using the command git diff --staged
 In case after performing many changes, we want to reset our files to earlier states without any edits, we can do that using the command 
 git reset --hard. One point to note is that this command will restore the staging area and the working area to its initial states and this is not undoable. 
-I made this edit to check out different versions of git diff. 
+I made this edit to check out different versions of git diff.
+Now lets start with branching. The command to checkout the existing number of branches and the current branch is : git branch. The branch currently being used will be highlighted.
+The command to create a new branch is git branch branchname. This just creats the branch. So, to go to the created branch we use the checkout comman i.e git checkout branchname. Then if we use git branch, we can see that the branch that we are using will be branch we checked out.
+One way to create a branch and check it out immediately is using the command: git branch -b branch_name which is the combination of the previos two commands.
+
+Multiple branches can be merged using the git merge branchname1 branchname2. This command will make the branchname1 as the master i.e it will move one step forward. After merging if try to look at the git log, we can see the combination of logs from both branches in a chronological order on the basis of time. In case of the merged branches, the comparision of a particular commit must be made with its parent to really understand the differences in the files and the code added. This is done using the git show commitID command, this will compare the commit with the commitID automatically with its parent. We can delete the label associated with a branch by using the git branch -d branchname command. This will not affect the commits but only the branch label will no longer exist.  
