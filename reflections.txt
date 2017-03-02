@@ -23,6 +23,6 @@ One way to create a branch and check it out immediately is using the command: gi
 Multiple branches can be merged using the git merge branchname1 branchname2. This command will make the branchname1 as the master i.e it will move one step forward. After merging if try to look at the git log, we can see the combination of logs from both branches in a chronological order on the basis of time. In case of the merged branches, the comparision of a particular commit must be made with its parent to really understand the differences in the files and the code added. This is done using the git show commitID command, this will compare the commit with the commitID automatically with its parent. We can delete the label associated with a branch by using the git branch -d branchname command. This will not affect the commits but only the branch label will no longer exist.
 
 I added this line to test the merging operation.
-I added this line to test the merging operation for the 2nd time.  
+I added this line to test the merging operation for the 2nd time. I added this for the same reason!  
 
 In case the merge conflict arises, we need to check the code to be removed and we must also remove the special characters added by git. Late to complete the merge we must send the file to the staging area (git add filename) and then commit the changes(git commit -m "message").
