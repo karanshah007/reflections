@@ -26,3 +26,5 @@ I added this line to test the merging operation.
 I added this line to test the merging operation for the 2nd time. I added this for the same reason!  
 
 In case the merge conflict arises, we need to check the code to be removed and we must also remove the special characters added by git. Late to complete the merge we must send the file to the staging area (git add filename) and then commit the changes(git commit -m "message").
+
+Now we shift our thoughts to forking. The process of forking is basically copying someone else github repository to your profile to implement your version of the project. After clicking on fork, we can clone it using the url given on the right hand side on the bottom part of the page. Then to push any changes we can find the url using the comman git remote -v and later push the changes. We can also add collaborators using the settings option on the bottom right part of the page. Later we use the collaborations tab and enter the persons username there and add them.
