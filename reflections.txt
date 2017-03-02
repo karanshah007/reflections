@@ -24,3 +24,5 @@ Multiple branches can be merged using the git merge branchname1 branchname2. Thi
 
 I added this line to test the merging operation.
 I added this line to test the merging operation for the 2nd time.  
+
+In case the merge conflict arises, we need to check the code to be removed and we must also remove the special characters added by git. Late to complete the merge we must send the file to the staging area (git add filename) and then commit the changes(git commit -m "message").
